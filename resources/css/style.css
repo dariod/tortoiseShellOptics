@@ -1,1 +1,297 @@
 /*This is the master style*/
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+header {
+  height: 31rem;
+  width: auto;
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 1rem;
+}
+
+/*This is the "site container class"*/
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.white {
+  color: white;
+  text-decoration: none;
+}
+
+.black {
+  color: black;
+  text-decoration: none;
+}
+
+
+/*This is the top bar*/
+.wide {
+
+}
+
+.small {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  width: 960px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cadetblue;
+}
+
+a {
+  margin-right: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+/*White slogan box*/
+header .flex {
+  justify-content: flex-end;
+}
+
+.main-banner {
+  margin-top: 10rem;
+  margin-right: -2rem;
+  padding: 1.5rem 5rem;
+  background-color: white;
+}
+
+.slogan {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/*Services section*/
+.services {
+  height: 8rem;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  width: 5rem;
+  height: 8rem;
+}
+.services .service img {
+  width: 4rem;
+  margin-top: 1rem;
+}
+
+/*Contacts sectoipn*/
+.contacts {
+  padding-top: 3rem;
+  height: auto;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  /*text-align: left;*/
+  margin: 3rem;
+  height: 8rem;
+  width: 35%;
+}
+
+.card-title {
+  background-color: cadetblue;
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  margin: 1rem 0;
+}
+
+.card-title-text {
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+}
+
+/*Footer styling*/
+footer {
+  background-color: azure;
+  padding: 4rem 3rem;
+}
+
+footer img {
+  margin-right: 1rem;
+}
+
+
+
+/*Tablet landscape*/
+/*@media only screen and (max-width: 1024px) and (min-width: 480px) {*/
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+
+  header {
+    padding-top: 0;
+    height: 25rem;
+  }
+
+  .main-banner {
+    margin-top: 5rem;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+    background-color: white;
+  }
+
+  .slogan {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .wide {
+    display: none;
+  }
+
+  .small {
+    display: inherit;
+  }
+
+  header {
+    height: 20rem;
+    background-position: 20%;
+  }
+
+  header .flex {
+    justify-content: flex-start;
+  }
+
+  .main-banner {
+    margin-top: 12rem;
+    margin-right: 0rem;
+    padding: 1rem 0;
+    background-color: white;
+    width: 100%;
+  }
+
+  .slogan {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .services {
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3.77rem 0;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1.54rem;
+    width: 5rem;
+    height: auto;
+  }
+  .services .service img {
+    width: 4rem;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .service p {
+    font-size: 0.77rem;
+  }
+
+
+  .contacts {
+    padding-top: 0;
+    margin: 0 0 0 0;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /*text-align: left;*/
+    margin: 0rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .card-title {
+    background-color: cadetblue;
+    width: 100%;
+    padding: 0.5rem 1.25rem;
+    margin: 0 0 1rem 0;
+    text-align: center;
+  }
+
+  .card-title-text {
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+  }
+
+  .card p {
+    font-size: 0.77rem;
+    margin: 0rem 0.5rem 4rem 0.5rem;
+  }
+
+  /*Footer styling*/
+  footer {
+    background-color: azure;
+    padding: 4rem 0rem;
+  }
+
+  footer .logo {
+    width: 100%;
+    padding: 0 0 0 0 ;
+    justify-content: center;
+  }
+
+  footer .logo img {
+    margin: 0 0 0 0;
+  }
+}
